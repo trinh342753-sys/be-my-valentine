@@ -2,6 +2,7 @@
 const questionScreen = document.getElementById('question-screen');
 const yesScreen = document.getElementById('yes-screen');
 const noScreen = document.getElementById('no-screen');
+const floatingPhotos = document.getElementById('floating-photos');
 
 const yesBtn = document.getElementById('yes-btn');
 const noBtn = document.getElementById('no-btn');
@@ -27,6 +28,10 @@ function showScreen(screen) {
 // ===== Yes Button - Show I LOVE YOU =====
 yesBtn.addEventListener('click', () => {
     showScreen(yesScreen);
+
+    // Show floating photos
+    floatingPhotos.classList.remove('hidden');
+
     createConfetti();
 
     // More confetti bursts!

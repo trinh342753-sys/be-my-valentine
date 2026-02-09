@@ -280,112 +280,119 @@ body {
     background: linear-gradient(135deg, #ffd700 0%, #ff6b9d 50%, #ff8fab 100%);
 }
 
-/* ===== Photo Gallery ===== */
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 20px;
+/* ===== Floating Photos (Small Icons Around Screen) ===== */
+.floating-photos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
 }
 
-.scattered-photo {
-    width: 15px;
-    height: 15px;
+.floating-photo {
+    position: absolute;
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
     object-fit: cover;
-    border-radius: 3px;
-    border: 1px solid white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 3px 15px rgba(255, 107, 157, 0.5);
+    opacity: 0.9;
 }
 
-.scattered-photo:hover {
-    transform: scale(8) rotate(0deg) !important;
-    z-index: 100;
+.fp-1 {
+    top: 10%;
+    left: 5%;
+    animation: floatAround1 4s ease-in-out infinite;
 }
 
-.photo-1 {
-    transform: rotate(-8deg);
-    animation: float1 3s ease-in-out infinite;
+.fp-2 {
+    top: 15%;
+    right: 8%;
+    animation: floatAround2 3.5s ease-in-out infinite;
 }
 
-.photo-2 {
-    transform: rotate(5deg);
-    animation: float2 3.5s ease-in-out infinite;
+.fp-3 {
+    bottom: 20%;
+    left: 8%;
+    animation: floatAround3 4.2s ease-in-out infinite;
 }
 
-.photo-3 {
-    transform: rotate(-3deg);
-    animation: float3 2.8s ease-in-out infinite;
+.fp-4 {
+    bottom: 15%;
+    right: 5%;
+    animation: floatAround4 3.8s ease-in-out infinite;
 }
 
-.photo-4 {
-    transform: rotate(7deg);
-    animation: float4 3.2s ease-in-out infinite;
+.fp-5 {
+    top: 50%;
+    left: 3%;
+    animation: floatAround5 4.5s ease-in-out infinite;
 }
 
-.photo-5 {
-    transform: rotate(-5deg);
-    animation: float5 3s ease-in-out infinite;
-}
-
-@keyframes float1 {
+@keyframes floatAround1 {
 
     0%,
     100% {
-        transform: rotate(-8deg) translateY(0);
+        transform: translate(0, 0) rotate(-5deg);
     }
 
     50% {
-        transform: rotate(-8deg) translateY(-8px);
+        transform: translate(10px, -15px) rotate(5deg);
     }
 }
 
-@keyframes float2 {
+@keyframes floatAround2 {
 
     0%,
     100% {
-        transform: rotate(5deg) translateY(0);
+        transform: translate(0, 0) rotate(5deg);
     }
 
     50% {
-        transform: rotate(5deg) translateY(-10px);
+        transform: translate(-10px, 10px) rotate(-5deg);
     }
 }
 
-@keyframes float3 {
+@keyframes floatAround3 {
 
     0%,
     100% {
-        transform: rotate(-3deg) translateY(0);
+        transform: translate(0, 0) rotate(3deg);
     }
 
     50% {
-        transform: rotate(-3deg) translateY(-6px);
+        transform: translate(15px, -10px) rotate(-3deg);
     }
 }
 
-@keyframes float4 {
+@keyframes floatAround4 {
 
     0%,
     100% {
-        transform: rotate(7deg) translateY(0);
+        transform: translate(0, 0) rotate(-3deg);
     }
 
     50% {
-        transform: rotate(7deg) translateY(-9px);
+        transform: translate(-12px, -12px) rotate(3deg);
     }
 }
 
-@keyframes float5 {
+@keyframes floatAround5 {
 
     0%,
     100% {
-        transform: rotate(-5deg) translateY(0);
+        transform: translate(0, 0) rotate(0deg);
     }
 
     50% {
-        transform: rotate(-5deg) translateY(-7px);
+        transform: translate(8px, 15px) rotate(5deg);
     }
 }
 
