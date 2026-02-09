@@ -280,26 +280,113 @@ body {
     background: linear-gradient(135deg, #ffd700 0%, #ff6b9d 50%, #ff8fab 100%);
 }
 
-.bear-animation {
-    margin-bottom: 20px;
+/* ===== Photo Gallery ===== */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
 }
 
-.bear-gif {
-    width: 180px;
-    height: auto;
-    border-radius: 20px;
-    animation: bearBounce 2s ease-in-out infinite;
+.scattered-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-@keyframes bearBounce {
+.scattered-photo:hover {
+    transform: scale(1.5) rotate(0deg) !important;
+    z-index: 100;
+}
+
+.photo-1 {
+    transform: rotate(-8deg);
+    animation: float1 3s ease-in-out infinite;
+}
+
+.photo-2 {
+    transform: rotate(5deg);
+    animation: float2 3.5s ease-in-out infinite;
+}
+
+.photo-3 {
+    transform: rotate(-3deg);
+    animation: float3 2.8s ease-in-out infinite;
+}
+
+.photo-4 {
+    transform: rotate(7deg);
+    animation: float4 3.2s ease-in-out infinite;
+}
+
+.photo-5 {
+    transform: rotate(-5deg);
+    animation: float5 3s ease-in-out infinite;
+}
+
+@keyframes float1 {
 
     0%,
     100% {
-        transform: translateY(0) scale(1);
+        transform: rotate(-8deg) translateY(0);
     }
 
     50% {
-        transform: translateY(-10px) scale(1.05);
+        transform: rotate(-8deg) translateY(-8px);
+    }
+}
+
+@keyframes float2 {
+
+    0%,
+    100% {
+        transform: rotate(5deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(5deg) translateY(-10px);
+    }
+}
+
+@keyframes float3 {
+
+    0%,
+    100% {
+        transform: rotate(-3deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translateY(-6px);
+    }
+}
+
+@keyframes float4 {
+
+    0%,
+    100% {
+        transform: rotate(7deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(7deg) translateY(-9px);
+    }
+}
+
+@keyframes float5 {
+
+    0%,
+    100% {
+        transform: rotate(-5deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-5deg) translateY(-7px);
     }
 }
 
