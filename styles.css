@@ -285,23 +285,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 25px;
-    padding: 10px;
+    gap: 8px;
+    margin-bottom: 20px;
 }
 
 .scattered-photo {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
-    border-radius: 12px;
-    border: 3px solid white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
 .scattered-photo:hover {
-    transform: scale(1.5) rotate(0deg) !important;
+    transform: scale(2) rotate(0deg) !important;
     z-index: 100;
 }
 
