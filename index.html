@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Will You Be My Valentine? 💕</title>
+    <meta name="description" content="A special Valentine's Day question just for you">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="hearts-container"></div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <!-- Screen 1: Question -->
+        <div class="card" id="question-screen">
+            <div class="card-glow"></div>
+            <div class="heart-icon">💕</div>
+            <h1 class="title">Will You Be My Valentine?</h1>
+            <div class="button-container">
+                <button class="btn btn-yes" id="yes-btn">Yes 💖</button>
+                <button class="btn btn-no" id="no-btn">No 💔</button>
+            </div>
+        </div>
+
+        <!-- Screen 2: Yes - I Love You -->
+        <div class="card hidden" id="yes-screen">
+            <div class="card-glow success-glow"></div>
+            <div class="love-animation">
+                <span class="love-heart">❤️</span>
+            </div>
+            <h1 class="title love-title">I LOVE YOU!</h1>
+            <div class="heart-burst">
+                <span>💕</span><span>💖</span><span>💗</span><span>💝</span><span>💕</span>
+            </div>
+            <p class="love-message">You just made me the happiest person! 🥰</p>
+        </div>
+
+        <!-- Screen 3: No - Try Again -->
+        <div class="card hidden" id="no-screen">
+            <div class="card-glow"></div>
+            <div class="sad-emoji">🥺</div>
+            <h1 class="title">Try Again...</h1>
+            <p class="try-message">Are you sure? Give me another chance! 💕</p>
+            <button class="btn btn-back" id="back-btn">Go Back �</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
