@@ -303,58 +303,58 @@ body {
     box-shadow: 0 3px 15px rgba(255, 107, 157, 0.6);
 }
 
-/* Position each photo around the screen */
+/* Position each photo at TOP and BOTTOM only */
 .fp1 {
-    top: 5%;
-    left: 5%;
+    top: 3%;
+    left: 10%;
     animation: floatA 4s ease-in-out infinite;
 }
 
 .fp2 {
-    top: 8%;
-    right: 5%;
+    top: 3%;
+    left: 40%;
     animation: floatB 3.5s ease-in-out infinite;
 }
 
 .fp3 {
-    top: 30%;
-    left: 3%;
+    top: 3%;
+    right: 10%;
     animation: floatC 4.2s ease-in-out infinite;
 }
 
 .fp4 {
-    top: 35%;
-    right: 3%;
+    top: 10%;
+    left: 25%;
     animation: floatD 3.8s ease-in-out infinite;
 }
 
 .fp5 {
-    bottom: 30%;
-    left: 5%;
+    top: 10%;
+    right: 25%;
     animation: floatE 4s ease-in-out infinite;
 }
 
 .fp6 {
-    bottom: 25%;
-    right: 5%;
+    bottom: 3%;
+    left: 10%;
     animation: floatF 3.6s ease-in-out infinite;
 }
 
 .fp7 {
-    bottom: 10%;
-    left: 8%;
+    bottom: 3%;
+    left: 40%;
     animation: floatG 4.3s ease-in-out infinite;
 }
 
 .fp8 {
-    bottom: 8%;
-    right: 8%;
+    bottom: 3%;
+    right: 10%;
     animation: floatH 3.9s ease-in-out infinite;
 }
 
 .fp9 {
-    top: 55%;
-    left: 2%;
+    bottom: 10%;
+    left: 50%;
     animation: floatI 4.1s ease-in-out infinite;
 }
 
